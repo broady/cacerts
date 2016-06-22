@@ -5,10 +5,10 @@
 .PHONY: img
 
 img:
-	docker run -v $(PWD):/cpcerts -w /cpcerts --rm -t debian:latest bash /cpcerts/debian_cpcerts.sh
+	docker run -v $(PWD):/cpcerts -w /cpcerts --rm -t debian:latest bash /cpcerts/debian_cpcerts.bash
 	docker build -t broady/cacerts .
 
-SRCS=debian_cpcerts.sh Makefile Dockerfile
+SRCS=debian_cpcerts.bash Makefile Dockerfile
 README.md: $(SRCS)
 	for f in $(SRCS); do \
 		echo "### $$(basename $$f)" && echo && \
