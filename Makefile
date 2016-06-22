@@ -1,3 +1,7 @@
+# Copyright 2016 Google Inc. All rights reserved.
+# Use of this source code is governed by the Apache 2.0
+# license that can be found in the LICENSE file.
+
 .PHONY: img
 
 img:
@@ -8,5 +12,5 @@ SRCS=debian_cpcerts.sh Makefile Dockerfile
 README.md: $(SRCS)
 	for f in $(SRCS); do \
 		echo "### $$(basename $$f)" && echo && \
-		echo \`\`\` && cat "$$f" && echo \`\`\` && echo; \
+		echo \`\`\` && tail -n+5 "$$f" && echo \`\`\` && echo; \
 	done > README.md

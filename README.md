@@ -23,7 +23,7 @@ SRCS=debian_cpcerts.sh Makefile Dockerfile
 README.md: $(SRCS)
 	for f in $(SRCS); do \
 		echo "### $$(basename $$f)" && echo && \
-		echo \`\`\` && cat "$$f" && echo \`\`\` && echo; \
+		echo \`\`\` && tail -n+5 "$$f" && echo \`\`\` && echo; \
 	done > README.md
 ```
 
