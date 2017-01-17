@@ -8,6 +8,7 @@ img: ca-certificates.crt
 	docker build -t broady/cacerts .
 
 ca-certificates.crt:
+	docker pull debian:latest
 	docker run -v $(PWD):/cpcerts -w /cpcerts --rm -t debian:latest bash /cpcerts/debian_cpcerts.bash
 
 SRCS=debian_cpcerts.bash Makefile Dockerfile
