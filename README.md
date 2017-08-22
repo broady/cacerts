@@ -1,3 +1,9 @@
+___DEPRECATED___: use [`gcr.io/distroless/base`](https://github.com/GoogleCloudPlatform/distroless/blob/master/base/README.md) instead.
+
+I'll still keep this up-to-date, but new users should use distroless instead.
+
+---
+
 Green if up to date with Debian: [![Build Status](https://travis-ci.org/broady/cacerts.svg?branch=master)](https://travis-ci.org/broady/cacerts)
 
 ### debian_cpcerts.bash
