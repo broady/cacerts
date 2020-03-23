@@ -1,4 +1,4 @@
-___DEPRECATED___: use [`gcr.io/distroless/base`](https://github.com/GoogleCloudPlatform/distroless/blob/master/base/README.md) instead.
+___DEPRECATED___: use [`gcr.io/distroless/static`](https://github.com/GoogleContainerTools/distroless/tree/master/base) instead.
 
 I'll still keep this up-to-date, but new users should use distroless instead.
 
